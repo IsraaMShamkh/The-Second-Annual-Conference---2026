@@ -43,11 +43,11 @@
             </nav>
             <div class="header-nav-actions">
                 <a href="https://ijbtcs.com/Conference-Publications-Section/submission" target="_blank" rel="noopener"
-                    class="btn btn-header-submit desktop-only">Submit Now</a>
+                    class="btn btn-header-submit">Submit Now</a>
                 <a href="https://ijbtcs.com/Conference-Publications-Section/user/register?source=" target="_blank"
-                    rel="noopener" class="btn btn-outline desktop-only">Register Now</a>
+                    rel="noopener" class="btn btn-outline">Register Now</a>
                 <a href="https://ijbtcs.com/Conference-Publications-Section/login" target="_blank" rel="noopener"
-                    class="btn btn-primary desktop-only">Login</a>
+                    class="btn btn-primary">Login</a>
                 <div class="mobile-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -64,8 +64,10 @@
                 <span><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</span>
             </div>
             <span class="intl-conf-badge">International Conference</span>
-            <h1>Advances in Biotechnology & <span class="text-gold">Computational Science</span></h1>
-            <span class="journal-name">International Journal of Biotechnology and Computational Science</span>
+            <h1 class="hero-h1-mobile-fix">Advances in Biotechnology & <span class="text-gold">Computational
+                    Science</span></h1>
+            <span class="journal-name hero-journal-name-mobile-fix">International Journal of Biotechnology and
+                Computational Science</span>
             <p class="hero-desc">The 2nd Annual International Conference bringing together leading experts to bridge the
                 gap between laboratory
                 research, AI modeling, and experimental innovation.</p>
@@ -147,7 +149,7 @@
                 <h2>Availability <span class="text-gold">Counters</span></h2>
                 <p>Track remaining opportunities for participation and sponsorship</p>
             </div>
-            <div class="availability-grid">
+            <div class="availability-grid mobile-slider">
                 <div class="track-card status-card border-glow-only">
                     <div class="card-inner">
                         <i class="fa-solid fa-file-contract"></i>
@@ -210,7 +212,7 @@
                 <h2>Scientific <span class="text-gold">Tracks</span></h2>
                 <p>Exploring the frontiers of Biotechnology & Computational Science</p>
             </div>
-            <div class="tracks-grid">
+            <div class="tracks-grid mobile-slider">
                 <div class="track-card border-glow-only">
                     <div class="card-inner">
                         <i class="fa-solid fa-microscope"></i>
@@ -622,7 +624,7 @@
                             <h3>Day ${day} – ${data.title}</h3>
                             <p>${data.desc}</p>
                         </div>
-                        <div class="itinerary-grid">
+                        <div class="discover-cairo-grid mobile-slider">
                             ${data.cards.map(card => `
                                 <div class="itinerary-card">
                                     <img src="${card.img}" alt="${card.title}">
