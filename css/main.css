@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
 /* 
 IJBTCS 2026 - Main Stylesheet
 Theme: Academic Pharaonic (Premium)
@@ -17,6 +19,7 @@ Theme: Academic Pharaonic (Premium)
     --container-width: 1280px;
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
+    --font-signature: 'Herr Von Muellerhoff', cursive;
 }
 
 /* Reset & Base */
@@ -192,13 +195,7 @@ h3 {
     .about-content,
     .ready-content,
     .about-journal-block,
-    /* .about-journal-block .flex-center-gap, */
-    /* Removed as per new rule below */
-    .journal-scope-centered,
-    /* Utility class for About Scope */
-    /* .journal-scope-centered .flex-center-gap */
-    /* Removed as per new rule below */
-        {
+    .journal-scope-centered {
         text-align: center !important;
         justify-content: center !important;
     }
@@ -390,7 +387,20 @@ h3 {
 
 .text-glow {
     color: var(--text-main);
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.signature-text {
+    font-family: var(--font-signature);
+    font-size: 2.2rem !important;
+    /* Larger for better visibility */
+    color: var(--accent-gold) !important;
+    display: inline-block;
+    margin-left: 0.8rem;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1;
 }
 
 .font-bold {
