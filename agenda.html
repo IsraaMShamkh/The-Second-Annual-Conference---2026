@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+    <div id="pharaonic-particles-bg" class="particles-full-page"></div>
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
@@ -35,11 +35,17 @@
                     <li><a href="registration.html">Registration & Fees</a></li>
                     <li><a href="travel.html">Travel</a></li>
                     <li><a href="partners.html">Partners</a></li>
+                    <li><a href="sponsorship.html">Sponsorship</a></li>
                     <li><a href="connect.html">Connect</a></li>
                 </ul>
             </nav>
-            <div style="display: flex; gap: 1.5rem; align-items: center;">
-                <a href="registration.html" class="btn btn-primary desktop-only">Register Now</a>
+            <div class="header-nav-actions">
+                <a href="https://ijbtcs.com/Conference-Publications-Section/submission" target="_blank" rel="noopener"
+                    class="btn btn-header-submit desktop-only">Submit Now</a>
+                <a href="https://ijbtcs.com/Conference-Publications-Section/user/register?source=" target="_blank"
+                    rel="noopener" class="btn btn-outline desktop-only">Register Now</a>
+                <a href="https://ijbtcs.com/Conference-Publications-Section/login" target="_blank" rel="noopener"
+                    class="btn btn-primary desktop-only">Login</a>
                 <div class="mobile-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -48,19 +54,20 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header text-center">
-        <div class="container">
-            <h1>Scientific <span class="text-gold">Agenda</span></h1>
-            <p class="text-muted header-sub">
-                A comprehensive 3-day program featuring the latest in Biotech & AI.
-                <br><strong>Location:</strong> Cairo University Conference Center
-            </p>
+    <section class="page-header-unified">
+        <h1>Scientific <span class="text-gold">Agenda</span></h1>
+        <p class="text-muted header-sub">
+            A comprehensive 3-day program featuring the latest in Biotech & AI.
+            <br><strong>Location:</strong> Cairo University Conference Center
+        </p>
         </div>
     </section>
 
     <!-- Agenda Content -->
     <section class="section section-agenda">
         <div class="container">
+
+
             <div class="agenda-tabs">
                 <button class="tab-btn active" data-tab="day1">Day 1: Core Sessions</button>
                 <button class="tab-btn" data-tab="day2">Day 2: Research</button>
@@ -69,7 +76,10 @@
 
             <!-- Day 1 -->
             <div class="tab-content active" id="day1">
-                <h3 class="mb-3 text-center">Day 1 – Opening & Core Scientific Sessions</h3>
+                <h3 class="mb-1 text-center">Day 1 – Opening & Core Scientific Sessions</h3>
+                <p class="text-center text-gold mb-3 text-bold-small">
+                    <i class="fa-solid fa-clock-rotate-left"></i> This schedule is updated weekly every 7 days
+                </p>
                 <table class="agenda-table">
                     <thead>
                         <tr>
@@ -79,6 +89,7 @@
                             <th>Session Title</th>
                             <th>Organization</th>
                             <th>Speaker</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -89,6 +100,7 @@
                             <td>Registration & Conference Bags</td>
                             <td>Organizing Committee</td>
                             <td>—</td>
+                            <td><span class="status-tag status-confirmed">Confirmed</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">10:20 – 10:50</td>
@@ -97,6 +109,7 @@
                             <td>Official Opening Session</td>
                             <td>Bioinformatics + UKABCS</td>
                             <td>Conference Chair</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">10:50 – 11:20</td>
@@ -105,6 +118,7 @@
                             <td>Advances in Genetic AI</td>
                             <td>Oxford Uni</td>
                             <td>Dr. Sarah J.</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">11:20 – 11:40</td>
@@ -113,6 +127,7 @@
                             <td>Industry Innovation Session</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">11:40 – 11:55</td>
@@ -121,6 +136,7 @@
                             <td>Abstract Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">11:55 – 12:10</td>
@@ -129,12 +145,14 @@
                             <td>Poster Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">12:10 – 12:30</td>
                             <td><span class="type-tag type-break">Coffee Break</span></td>
                             <td class="duration-col">20 min</td>
                             <td>Networking Coffee</td>
+                            <td>—</td>
                             <td>—</td>
                             <td>—</td>
                         </tr>
@@ -192,7 +210,10 @@
 
             <!-- Day 2 -->
             <div class="tab-content" id="day2">
-                <h3 class="mb-3 text-center">Day 2 – Research & Poster Expansion</h3>
+                <h3 class="mb-1 text-center">Day 2 – Research & Poster Expansion</h3>
+                <p class="text-center text-gold mb-3 text-bold-small">
+                    <i class="fa-solid fa-clock-rotate-left"></i> This schedule is updated weekly every 7 days
+                </p>
                 <table class="agenda-table">
                     <thead>
                         <tr>
@@ -202,6 +223,7 @@
                             <th>Session Title</th>
                             <th>Organization</th>
                             <th>Speaker</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -212,6 +234,7 @@
                             <td>International Keynote Address</td>
                             <td>MIT Lab</td>
                             <td>Prof. Robert H.</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">10:50 – 11:20</td>
@@ -220,6 +243,7 @@
                             <td>Paper Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">11:20 – 11:40</td>
@@ -228,6 +252,7 @@
                             <td>Industry Research Solutions</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">12:30 – 13:00</td>
@@ -236,6 +261,7 @@
                             <td>Paper Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">14:30 – 15:00</td>
@@ -244,6 +270,7 @@
                             <td>Paper Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">15:00 – 15:20</td>
@@ -252,6 +279,7 @@
                             <td>Advanced Applications</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">16:40 – 17:00</td>
@@ -260,6 +288,7 @@
                             <td>Industry Innovation</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">17:00 – 18:00</td>
@@ -268,6 +297,7 @@
                             <td>Research & Collaboration Forum</td>
                             <td>Panel Institutions</td>
                             <td>Panel Members</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -275,7 +305,10 @@
 
             <!-- Day 3 -->
             <div class="tab-content" id="day3">
-                <h3 class="mb-3 text-center">Day 3 – Final Scientific Sessions & Awards</h3>
+                <h3 class="mb-1 text-center">Day 3 – Final Scientific Sessions & Awards</h3>
+                <p class="text-center text-gold mb-3 text-bold-small">
+                    <i class="fa-solid fa-clock-rotate-left"></i> This schedule is updated weekly every 7 days
+                </p>
                 <table class="agenda-table">
                     <thead>
                         <tr>
@@ -285,6 +318,7 @@
                             <th>Session Title</th>
                             <th>Organization</th>
                             <th>Speaker</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -295,6 +329,7 @@
                             <td>Paper Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">10:50 – 11:10</td>
@@ -303,6 +338,7 @@
                             <td>Industry Technology Session</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">12:00 – 12:30</td>
@@ -311,6 +347,7 @@
                             <td>Paper Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">14:00 – 14:30</td>
@@ -319,6 +356,7 @@
                             <td>Paper Title TBD</td>
                             <td>Institution</td>
                             <td>Presenter</td>
+                            <td><span class="status-tag status-confirmed">Available</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">15:00 – 15:20</td>
@@ -327,6 +365,7 @@
                             <td>Applied Scientific Solutions</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">16:10 – 16:30</td>
@@ -335,6 +374,7 @@
                             <td>Final Industry Session</td>
                             <td>Sponsor Company</td>
                             <td>Company Rep</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">16:30 – 17:30</td>
@@ -343,6 +383,7 @@
                             <td>Scientific Recognition & Certificates</td>
                             <td>Jury Committee</td>
                             <td>—</td>
+                            <td><span class="status-tag status-booked">Booked</span></td>
                         </tr>
                         <tr>
                             <td class="time-col">17:30 – 18:00</td>
@@ -351,6 +392,7 @@
                             <td>Closing Remarks + Media & Photos</td>
                             <td>Organizing Committee</td>
                             <td>—</td>
+                            <td><span class="status-tag status-confirmed">Confirmed</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -361,7 +403,6 @@
 
     <!-- Ready to Join -->
     <section class="ready-to-join-section">
-        <div id="pharaonic-particles-bg"></div>
         <div class="container ready-content">
             <h2>Ready to <span class="text-gold">Join Us?</span></h2>
             <p>To begin your registration or for any inquiries, please contact our administrative team.</p>
@@ -384,8 +425,9 @@
                     <ul class="text-muted">
                         <li><a href="about.html" class="hover-gold">About Conference</a></li>
                         <li><a href="agenda.html" class="hover-gold">Scientific Agenda</a></li>
-                        <li><a href="registration.html" class="hover-gold">Registration & Fees</a></li>
-                        <li><a href="travel.html" class="hover-gold">Cultural Program</a></li>
+                        <li><a href="registration.html" class="hover-gold">Registration Fees</a></li>
+                        <li><a href="sponsorship.html" class="hover-gold">Sponsorship</a></li>
+                        <li><a href="travel.html" class="hover-gold">Travel & Tourism</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -434,34 +476,74 @@
                 };
             });
 
-            // Three.js Pharaonic Particles Background
+            // Three.js Pharaonic Particles Background (Round & Glowing)
             function initPharaonicParticles() {
                 const container = document.getElementById('pharaonic-particles-bg');
                 if (!container) return;
 
                 const scene = new THREE.Scene();
                 const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-                const renderer = new THREE.WebGLRenderer({ alpha: true });
+                const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
                 renderer.setSize(container.offsetWidth, container.offsetHeight);
                 container.appendChild(renderer.domElement);
 
+                // Create circular texture with glow
+                const canvas = document.createElement('canvas');
+                canvas.width = 64;
+                canvas.height = 64;
+                const context = canvas.getContext('2d');
+                const gradient = context.createRadialGradient(32, 32, 0, 32, 32, 32);
+                gradient.addColorStop(0, 'rgba(212, 175, 55, 1)');
+                gradient.addColorStop(0.2, 'rgba(212, 175, 55, 0.8)');
+                gradient.addColorStop(0.5, 'rgba(212, 175, 55, 0.2)');
+                gradient.addColorStop(1, 'rgba(212, 175, 55, 0)');
+                context.fillStyle = gradient;
+                context.fillRect(0, 0, 64, 64);
+                const texture = new THREE.CanvasTexture(canvas);
+
                 const geometry = new THREE.BufferGeometry();
                 const vertices = [];
-                for (let i = 0; i < 1500; i++) {
-                    vertices.push(Math.random() * 2000 - 1000, Math.random() * 2000 - 1000, Math.random() * 2000 - 1000);
+                const particleCount = 2000;
+
+                for (let i = 0; i < particleCount; i++) {
+                    vertices.push(
+                        Math.random() * 2000 - 1000,
+                        Math.random() * 2000 - 1000,
+                        Math.random() * 2000 - 1000
+                    );
                 }
+
                 geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-                const material = new THREE.PointsMaterial({ color: 0xd4af37, size: 2, transparent: true, opacity: 0.8 });
+
+                const material = new THREE.PointsMaterial({
+                    color: 0xd4af37,
+                    size: 8,
+                    map: texture,
+                    transparent: true,
+                    opacity: 0.8,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false
+                });
+
                 const points = new THREE.Points(geometry, material);
                 scene.add(points);
+
                 camera.position.z = 500;
+
                 function animate() {
                     requestAnimationFrame(animate);
-                    points.rotation.x += 0.0005;
-                    points.rotation.y += 0.001;
+                    points.rotation.x += 0.0003;
+                    points.rotation.y += 0.0005;
                     renderer.render(scene, camera);
                 }
+
+                window.addEventListener('resize', () => {
+                    camera.aspect = container.offsetWidth / container.offsetHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(container.offsetWidth, container.offsetHeight);
+                });
+
                 animate();
             }
             initPharaonicParticles();

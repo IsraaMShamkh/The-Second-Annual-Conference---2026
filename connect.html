@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+    <div id="pharaonic-particles-bg" class="particles-full-page"></div>
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
@@ -36,11 +36,17 @@
                     <li><a href="registration.html">Registration & Fees</a></li>
                     <li><a href="travel.html">Travel</a></li>
                     <li><a href="partners.html">Partners</a></li>
+                    <li><a href="sponsorship.html">Sponsorship</a></li>
                     <li><a href="connect.html" class="active">Connect</a></li>
                 </ul>
             </nav>
-            <div style="display: flex; gap: 1.5rem; align-items: center;">
-                <a href="registration.html" class="btn btn-primary desktop-only">Register Now</a>
+            <div class="header-nav-actions">
+                <a href="https://ijbtcs.com/Conference-Publications-Section/submission" target="_blank" rel="noopener"
+                    class="btn btn-header-submit desktop-only">Submit Now</a>
+                <a href="https://ijbtcs.com/Conference-Publications-Section/user/register?source=" target="_blank"
+                    rel="noopener" class="btn btn-outline desktop-only">Register Now</a>
+                <a href="https://ijbtcs.com/Conference-Publications-Section/login" target="_blank" rel="noopener"
+                    class="btn btn-primary desktop-only">Login</a>
                 <div class="mobile-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -49,7 +55,7 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header text-center">
+    <section class="page-header-unified">
         <div class="container">
             <h1>Stay <span class="text-gold">Connected</span></h1>
             <p class="text-muted">Register your interest or reach out for specialized assistance.</p>
@@ -182,7 +188,6 @@
 
     <!-- Ready to Join -->
     <section class="ready-to-join-section">
-        <div id="pharaonic-particles-bg"></div>
         <div class="container ready-content">
             <h2>Ready to <span class="text-gold">Join Us?</span></h2>
             <p>To begin your registration or for any inquiries, please contact our administrative team.</p>
@@ -205,8 +210,9 @@
                     <ul class="text-muted">
                         <li><a href="about.html" class="hover-gold">About Conference</a></li>
                         <li><a href="agenda.html" class="hover-gold">Scientific Agenda</a></li>
-                        <li><a href="registration.html" class="hover-gold">Registration & Fees</a></li>
-                        <li><a href="travel.html" class="hover-gold">Cultural Program</a></li>
+                        <li><a href="registration.html" class="hover-gold">Registration Fees</a></li>
+                        <li><a href="sponsorship.html" class="hover-gold">Sponsorship</a></li>
+                        <li><a href="travel.html" class="hover-gold">Travel & Tourism</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -245,41 +251,75 @@
                 });
             }
 
-            // Three.js Pharaonic Particles Background
+            // Three.js Pharaonic Particles Background (Round & Glowing)
             function initPharaonicParticles() {
                 const container = document.getElementById('pharaonic-particles-bg');
                 if (!container) return;
 
                 const scene = new THREE.Scene();
                 const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-                const renderer = new THREE.WebGLRenderer({ alpha: true });
+                const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
                 renderer.setSize(container.offsetWidth, container.offsetHeight);
                 container.appendChild(renderer.domElement);
 
+                // Create circular texture with glow
+                const canvas = document.createElement('canvas');
+                canvas.width = 64;
+                canvas.height = 64;
+                const context = canvas.getContext('2d');
+                const gradient = context.createRadialGradient(32, 32, 0, 32, 32, 32);
+                gradient.addColorStop(0, 'rgba(212, 175, 55, 1)');
+                gradient.addColorStop(0.2, 'rgba(212, 175, 55, 0.8)');
+                gradient.addColorStop(0.5, 'rgba(212, 175, 55, 0.2)');
+                gradient.addColorStop(1, 'rgba(212, 175, 55, 0)');
+                context.fillStyle = gradient;
+                context.fillRect(0, 0, 64, 64);
+                const texture = new THREE.CanvasTexture(canvas);
+
                 const geometry = new THREE.BufferGeometry();
                 const vertices = [];
-                for (let i = 0; i < 1500; i++) {
-                    vertices.push(Math.random() * 2000 - 1000, Math.random() * 2000 - 1000, Math.random() * 2000 - 1000);
+                const particleCount = 2000;
+
+                for (let i = 0; i < particleCount; i++) {
+                    vertices.push(
+                        Math.random() * 2000 - 1000,
+                        Math.random() * 2000 - 1000,
+                        Math.random() * 2000 - 1000
+                    );
                 }
+
                 geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-                const material = new THREE.PointsMaterial({ color: 0xd4af37, size: 2, transparent: true, opacity: 0.8 });
+
+                const material = new THREE.PointsMaterial({
+                    color: 0xd4af37,
+                    size: 8,
+                    map: texture,
+                    transparent: true,
+                    opacity: 0.8,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false
+                });
+
                 const points = new THREE.Points(geometry, material);
                 scene.add(points);
+
                 camera.position.z = 500;
+
                 function animate() {
                     requestAnimationFrame(animate);
-                    points.rotation.x += 0.0005;
-                    points.rotation.y += 0.001;
+                    points.rotation.x += 0.0003;
+                    points.rotation.y += 0.0005;
                     renderer.render(scene, camera);
                 }
-                animate();
 
                 window.addEventListener('resize', () => {
                     camera.aspect = container.offsetWidth / container.offsetHeight;
                     camera.updateProjectionMatrix();
                     renderer.setSize(container.offsetWidth, container.offsetHeight);
                 });
+
+                animate();
             }
             initPharaonicParticles();
         });

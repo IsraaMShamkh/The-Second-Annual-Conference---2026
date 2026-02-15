@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+    <div id="pharaonic-particles-bg" class="particles-full-page"></div>
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
@@ -36,11 +36,17 @@
                     <li><a href="registration.html">Registration & Fees</a></li>
                     <li><a href="travel.html">Travel</a></li>
                     <li><a href="partners.html" class="active">Partners</a></li>
+                    <li><a href="sponsorship.html">Sponsorship</a></li>
                     <li><a href="connect.html">Connect</a></li>
                 </ul>
             </nav>
-            <div style="display: flex; gap: 1.5rem; align-items: center;">
-                <a href="registration.html" class="btn btn-primary desktop-only">Register Now</a>
+            <div class="header-nav-actions">
+                <a href="https://ijbtcs.com/Conference-Publications-Section/submission" target="_blank" rel="noopener"
+                    class="btn btn-header-submit desktop-only">Submit Now</a>
+                <a href="https://ijbtcs.com/Conference-Publications-Section/user/register?source=" target="_blank"
+                    rel="noopener" class="btn btn-outline desktop-only">Register Now</a>
+                <a href="https://ijbtcs.com/Conference-Publications-Section/login" target="_blank" rel="noopener"
+                    class="btn btn-primary desktop-only">Login</a>
                 <div class="mobile-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -49,7 +55,7 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header text-center">
+    <section class="page-header-unified">
         <div class="container">
             <h1>Partners & <span class="text-gold">Sponsors</span></h1>
             <p class="text-muted">Empowering innovation through global academic and industry synergy.</p>
@@ -60,8 +66,7 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-3">
-                <h2 class="section-title-large">Strategic <span class="text-gold">Leadership</span>
-                </h2>
+                <h2 class="section-title-large">Strategic <span class="text-gold">Leadership</span></h2>
                 <p class="text-muted">The pillars supporting the IJBTCS 2026 conference.</p>
             </div>
             <div class="org-grid">
@@ -89,61 +94,12 @@
         </div>
     </section>
 
-    <!-- Sponsorship Opportunities -->
-    <section class="section bg-glass-light">
-        <div class="container">
-            <div class="text-center mb-3">
-                <h2 class="section-title-large">Sponsorship <span class="text-gold">Opportunities</span></h2>
-                <p class="text-muted">Global visibility for your brand in Biotechnology and AI.</p>
-            </div>
-
-            <div class="sponsor-grid">
-                <div class="sponsor-card border-glow">
-                    <h3>Online Sponsor</h3>
-                    <span class="sponsor-price">£900</span>
-                    <ul class="sponsor-features">
-                        <li>Logo on conference website</li>
-                        <li>Digital certificate of appreciation</li>
-                        <li>1 Virtual attendee pass</li>
-                        <li>Social media mention</li>
-                    </ul>
-                    <a href="connect.html" class="btn btn-outline">Become a Sponsor</a>
-                </div>
-
-                <div class="sponsor-card border-glow popular">
-                    <div class="popular-badge">POPULAR</div>
-                    <h3>Session Sponsor</h3>
-                    <span class="sponsor-price">£1500</span>
-                    <ul class="sponsor-features">
-                        <li>Logo on all session slides</li>
-                        <li>3-minute intro speech</li>
-                        <li>2 In-person attendee passes</li>
-                        <li>Premium website branding</li>
-                    </ul>
-                    <a href="connect.html" class="btn btn-primary">Select Session</a>
-                </div>
-
-                <div class="sponsor-card border-glow">
-                    <h3>Strategic Partner</h3>
-                    <span class="sponsor-price">Contact</span>
-                    <ul class="sponsor-features">
-                        <li>Exclusive venue branding</li>
-                        <li>Keynote opportunity</li>
-                        <li>Full VIP hospitality package</li>
-                        <li>Custom recruitment opportunities</li>
-                    </ul>
-                    <a href="connect.html" class="btn btn-outline">Enquire Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Our Partner Directory -->
     <section class="section">
         <div class="container">
             <div class="text-center mb-3">
-                <h2 class="section-title-large">Our Partner <span class="text-gold">Directory</span>
-                </h2>
+                <h2 class="section-title-large">Our Partner <span class="text-gold">Directory</span></h2>
                 <p class="text-muted">A comprehensive look at our supporting entities and collaborators.</p>
             </div>
 
@@ -160,40 +116,55 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="https://img.icons8.com/ios-filled/50/d4af37/gate.png" class="partner-logo"
-                                    alt="BG"></td>
+                            <td>
+                                <div class="partner-logo-container">
+                                    <i class="fa-solid fa-gate fa-2x text-gold"></i>
+                                </div>
+                            </td>
                             <td>Bioinformatics Gate</td>
                             <td><span class="tag-partner">Organizer</span></td>
                             <td>Technical Execution</td>
                             <td>Egypt</td>
                         </tr>
                         <tr>
-                            <td><img src="https://img.icons8.com/ios-filled/50/d4af37/molecule.png" class="partner-logo"
-                                    alt="EBO"></td>
+                            <td>
+                                <div class="partner-logo-container">
+                                    <i class="fa-solid fa-flask fa-2x text-gold"></i>
+                                </div>
+                            </td>
                             <td>EBO BioSolutions</td>
                             <td><span class="tag-partner">Industry</span></td>
                             <td>Strategic Oversight</td>
                             <td>United Kingdom</td>
                         </tr>
                         <tr>
-                            <td><img src="https://img.icons8.com/ios-filled/50/d4af37/education.png"
-                                    class="partner-logo" alt="UK"></td>
+                            <td>
+                                <div class="partner-logo-container">
+                                    <i class="fa-solid fa-graduations-cap fa-2x text-gold"></i>
+                                </div>
+                            </td>
                             <td>UKABCS</td>
                             <td><span class="tag-partner">Patron</span></td>
                             <td>Academic Patronage</td>
                             <td>United Kingdom</td>
                         </tr>
                         <tr>
-                            <td><img src="https://img.icons8.com/ios-filled/50/d4af37/museum.png" class="partner-logo"
-                                    alt="CU"></td>
+                            <td>
+                                <div class="partner-logo-container">
+                                    <i class="fa-solid fa-landmark fa-2x text-gold"></i>
+                                </div>
+                            </td>
                             <td>Cairo University</td>
                             <td><span class="tag-partner">Academic</span></td>
                             <td>Venue & Faculty</td>
                             <td>Egypt</td>
                         </tr>
                         <tr>
-                            <td><img src="https://img.icons8.com/ios-filled/50/d4af37/microscope.png"
-                                    class="partner-logo" alt="OX"></td>
+                            <td>
+                                <div class="partner-logo-container">
+                                    <i class="fa-solid fa-microscope fa-2x text-gold"></i>
+                                </div>
+                            </td>
                             <td>Oxford Biotech Lab</td>
                             <td><span class="tag-partner">Research</span></td>
                             <td>Peer Review</td>
@@ -207,7 +178,6 @@
 
     <!-- Ready to Join -->
     <section class="ready-to-join-section">
-        <div id="pharaonic-particles-bg"></div>
         <div class="container ready-content">
             <h2>Ready to <span class="text-gold">Join Us?</span></h2>
             <p>To begin your registration or for any inquiries, please contact our administrative team.</p>
@@ -230,8 +200,9 @@
                     <ul class="text-muted">
                         <li><a href="about.html" class="hover-gold">About Conference</a></li>
                         <li><a href="agenda.html" class="hover-gold">Scientific Agenda</a></li>
-                        <li><a href="registration.html" class="hover-gold">Registration & Fees</a></li>
-                        <li><a href="travel.html" class="hover-gold">Cultural Program</a></li>
+                        <li><a href="registration.html" class="hover-gold">Registration Fees</a></li>
+                        <li><a href="sponsorship.html" class="hover-gold">Sponsorship</a></li>
+                        <li><a href="travel.html" class="hover-gold">Travel & Tourism</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -270,41 +241,75 @@
                 });
             }
 
-            // Three.js Pharaonic Particles Background
+            // Three.js Pharaonic Particles Background (Round & Glowing)
             function initPharaonicParticles() {
                 const container = document.getElementById('pharaonic-particles-bg');
                 if (!container) return;
 
                 const scene = new THREE.Scene();
                 const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-                const renderer = new THREE.WebGLRenderer({ alpha: true });
+                const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
                 renderer.setSize(container.offsetWidth, container.offsetHeight);
                 container.appendChild(renderer.domElement);
 
+                // Create circular texture with glow
+                const canvas = document.createElement('canvas');
+                canvas.width = 64;
+                canvas.height = 64;
+                const context = canvas.getContext('2d');
+                const gradient = context.createRadialGradient(32, 32, 0, 32, 32, 32);
+                gradient.addColorStop(0, 'rgba(212, 175, 55, 1)');
+                gradient.addColorStop(0.2, 'rgba(212, 175, 55, 0.8)');
+                gradient.addColorStop(0.5, 'rgba(212, 175, 55, 0.2)');
+                gradient.addColorStop(1, 'rgba(212, 175, 55, 0)');
+                context.fillStyle = gradient;
+                context.fillRect(0, 0, 64, 64);
+                const texture = new THREE.CanvasTexture(canvas);
+
                 const geometry = new THREE.BufferGeometry();
                 const vertices = [];
-                for (let i = 0; i < 1500; i++) {
-                    vertices.push(Math.random() * 2000 - 1000, Math.random() * 2000 - 1000, Math.random() * 2000 - 1000);
+                const particleCount = 2000;
+
+                for (let i = 0; i < particleCount; i++) {
+                    vertices.push(
+                        Math.random() * 2000 - 1000,
+                        Math.random() * 2000 - 1000,
+                        Math.random() * 2000 - 1000
+                    );
                 }
+
                 geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-                const material = new THREE.PointsMaterial({ color: 0xd4af37, size: 2, transparent: true, opacity: 0.8 });
+
+                const material = new THREE.PointsMaterial({
+                    color: 0xd4af37,
+                    size: 8,
+                    map: texture,
+                    transparent: true,
+                    opacity: 0.8,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false
+                });
+
                 const points = new THREE.Points(geometry, material);
                 scene.add(points);
+
                 camera.position.z = 500;
+
                 function animate() {
                     requestAnimationFrame(animate);
-                    points.rotation.x += 0.0005;
-                    points.rotation.y += 0.001;
+                    points.rotation.x += 0.0003;
+                    points.rotation.y += 0.0005;
                     renderer.render(scene, camera);
                 }
-                animate();
 
                 window.addEventListener('resize', () => {
                     camera.aspect = container.offsetWidth / container.offsetHeight;
                     camera.updateProjectionMatrix();
                     renderer.setSize(container.offsetWidth, container.offsetHeight);
                 });
+
+                animate();
             }
             initPharaonicParticles();
         });
