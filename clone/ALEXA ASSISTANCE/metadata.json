@@ -1,7 +1,0 @@
-{
-  "name": "ALEXA - Book Mentor",
-  "description": "A voice-first personal mentor designed to guide learners through specific uploaded books.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
