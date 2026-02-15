@@ -201,9 +201,9 @@
                     title: "Grand Egyptian Museum",
                     desc: "Exploring the world's largest archaeological museum and its incredible treasures.",
                     cards: [
-                        { title: "GEM Gallery Tour", desc: "Walking through thousands of years of human engineering history.", img: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e01a?auto=format&fit=crop&w=600" },
-                        { title: "Tutankhamun Hall", desc: "Golden treasures and artifacts from the world's most famous boy king.", img: "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=600" },
-                        { title: "Ancient Architecture", desc: "Analyzing the monumental designs that stood the test of time.", img: "https://images.unsplash.com/photo-1531761535209-180b53087361?auto=format&fit=crop&w=600" },
+                        { title: "GEM Gallery Tour", desc: "Walking through thousands of years of human engineering history.", img: "https://images.unsplash.com/photo-1544013583-4a12da97003c?auto=format&fit=crop&w=600" },
+                        { title: "Tutankhamun Hall", desc: "Golden treasures and artifacts from the world's most famous boy king.", img: "https://images.unsplash.com/photo-1544013583-4a12da97003c?auto=format&fit=crop&w=600" },
+                        { title: "Ancient Architecture", desc: "Analyzing the monumental designs that stood the test of time.", img: "https://images.unsplash.com/photo-1544013583-4a12da97003c?auto=format&fit=crop&w=600" },
                         { title: "Traditional Dining", desc: "A gourmet lunch experience near the museum's grand entrance.", img: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600" }
                     ]
                 },
@@ -306,6 +306,13 @@
                     renderItinerary(i);
                 };
                 tabContainer.appendChild(btn);
+
+                // Force wrap after Day 7 as per v4
+                if (i === 7) {
+                    const spacer = document.createElement('div');
+                    spacer.className = 'w-100';
+                    tabContainer.appendChild(spacer);
+                }
             }
 
             // ADD DOWNLOAD TAB

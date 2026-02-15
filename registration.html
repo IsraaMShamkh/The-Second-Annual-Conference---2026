@@ -62,7 +62,7 @@
     </section>
 
     <!-- Online Participation Section -->
-    <section class="section pb-0">
+    <section class="section">
         <div class="container">
             <div class="text-center mb-3">
                 <h2 class="section-title-large">Online <span class="text-gold">Participation</span></h2>
@@ -126,7 +126,7 @@
         </div>
     </section>
 
-    <section class="section pt-0">
+    <section class="section">
         <div class="container">
             <div class="text-center mb-3">
                 <h2 class="section-title-large">On-site <span class="text-gold">Participation</span></h2>
@@ -191,63 +191,64 @@
     </section>
 
 
-    <div class="container">
-        <!-- Submission Workflow Section (Redesigned) -->
-        <div class="text-center mb-5 mt-5">
-            <h2 class="section-title-large">Participation <span class="text-gold">Workflow</span></h2>
-            <p class="text-muted text-large-muted">Click on each stage below to view instructions for Submission or
-                Attendance.</p>
-        </div>
-        <div class="workflow-tabs">
-            <div class="workflow-tab active" onclick="showWorkflowDetail(1)">
-                <div class="tab-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
-                <span>01. Submission</span>
+    <section class="section">
+        <div class="container">
+            <!-- Submission Workflow Section (Redesigned) -->
+            <div class="text-center mb-5">
+                <h2 class="section-title-large">Participation <span class="text-gold">Workflow</span></h2>
+                <p class="text-muted text-large-muted">Click on each stage below to view instructions for Submission or
+                    Attendance.</p>
             </div>
-            <div class="workflow-tab" onclick="showWorkflowDetail(2)">
-                <div class="tab-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-                <span>02. Acceptance</span>
+            <div class="workflow-tabs">
+                <div class="workflow-tab active" onclick="showWorkflowDetail(1)">
+                    <div class="tab-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
+                    <span>01. Submission</span>
+                </div>
+                <div class="workflow-tab" onclick="showWorkflowDetail(2)">
+                    <div class="tab-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <span>02. Acceptance</span>
+                </div>
+                <div class="workflow-tab" onclick="showWorkflowDetail(3)">
+                    <div class="tab-icon"><i class="fa-solid fa-address-card"></i></div>
+                    <span>03. Attendance Requirements</span>
+                </div>
+                <div class="workflow-tab" onclick="showWorkflowDetail(4)">
+                    <div class="tab-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <span>04. Payment</span>
+                </div>
+                <div class="workflow-tab" onclick="showWorkflowDetail(5)">
+                    <div class="tab-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <span>05. Follow-up</span>
+                </div>
             </div>
-            <div class="workflow-tab" onclick="showWorkflowDetail(3)">
-                <div class="tab-icon"><i class="fa-solid fa-address-card"></i></div>
-                <span>03. Attendance Requirements</span>
-            </div>
-            <div class="workflow-tab" onclick="showWorkflowDetail(4)">
-                <div class="tab-icon"><i class="fa-solid fa-credit-card"></i></div>
-                <span>04. Payment</span>
-            </div>
-            <div class="workflow-tab" onclick="showWorkflowDetail(5)">
-                <div class="tab-icon"><i class="fa-solid fa-user-check"></i></div>
-                <span>05. Follow-up</span>
-            </div>
-        </div>
 
-        <!-- Full-width Detail Card -->
-        <div class="workflow-detail-display mt-3">
-            <div id="workflow-detail-content" class="fade-in text-center">
-                <!-- Initial content (Step 1) -->
-                <div class="detail-header">
-                    <i class="fa-solid fa-file-arrow-up text-gold"></i>
-                    <h3>01. Submission Process</h3>
-                </div>
-                <p class="mt-2 text-large-muted">Authors are invited to submit their original abstracts or full
-                    research papers through the official journal portal. Please ensure your submission adheres to
-                    the academic standards of IJBTCS.</p>
-                <div class="workflow-meta mt-2 justify-center">
-                    <div class="meta-item"><i class="fa-solid fa-circle-check text-gold"></i> High-quality research
+            <!-- Full-width Detail Card -->
+            <div class="workflow-detail-display mt-3">
+                <div id="workflow-detail-content" class="fade-in text-center">
+                    <!-- Initial content (Step 1) -->
+                    <div class="detail-header">
+                        <i class="fa-solid fa-file-arrow-up text-gold"></i>
+                        <h3>01. Submission Process</h3>
                     </div>
-                    <div class="meta-item"><i class="fa-solid fa-circle-check text-gold"></i> Follow Journal
-                        Formatting</div>
+                    <p class="mt-2 text-large-muted">Authors are invited to submit their original abstracts or full
+                        research papers through the official journal portal. Please ensure your submission adheres to
+                        the academic standards of IJBTCS.</p>
+                    <div class="workflow-meta mt-2 justify-center">
+                        <div class="meta-item"><i class="fa-solid fa-circle-check text-gold"></i> High-quality research
+                        </div>
+                        <div class="meta-item"><i class="fa-solid fa-circle-check text-gold"></i> Follow Journal
+                            Formatting</div>
+                    </div>
+                    <div class="detail-actions mt-3 justify-center">
+                        <a href="https://ijbtcs.com/Conference-Publications-Section/submission" target="_blank"
+                            rel="noopener" class="btn btn-primary">Submit Now</a>
+                        <a href="#" class="btn btn-outline">Author Guidelines</a>
+                    </div>
+                    <p class="mt-2 text-small text-muted"><em>*Note: Our editorial team will assist with final layout
+                            formatting.</em></p>
                 </div>
-                <div class="detail-actions mt-3 justify-center">
-                    <a href="https://ijbtcs.com/Conference-Publications-Section/submission" target="_blank"
-                        rel="noopener" class="btn btn-primary">Submit Now</a>
-                    <a href="#" class="btn btn-outline">Author Guidelines</a>
-                </div>
-                <p class="mt-2 text-small text-muted"><em>*Note: Our editorial team will assist with final layout
-                        formatting.</em></p>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- Ready to Join -->
