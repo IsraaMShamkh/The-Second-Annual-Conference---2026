@@ -28,7 +28,7 @@
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
-            <a href="index.html" class="logo">IJBTCS <span>2026</span></a>
+            <a href="index.html" class="logo"><span class="logo-badge">IG</span>IJBTCS <span>2026</span></a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
@@ -82,27 +82,28 @@
 
     <!-- Overview Section -->
     <section class="section">
+        <div class="container text-center">
+            <div class="overview-clean-content" style="max-width: 900px; margin: 0 auto;">
+                <h2>Conference <span class="text-gold">Overview</span></h2>
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">The Second Annual Conference 2026 is the official international flagship event
+                    of IJBTCS, bringing together researchers, developers, and industry leaders.</p>
+                <p class="text-muted" style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">Hosted in Egypt by Bioinformatics Gate, this edition emphasizes the
+                    integration of Biotechnology with Computational Science, promoting interdisciplinary research that bridges
+                    experimental lab innovation with AI.</p>
+                <div>
+                    <a href="about.html" class="btn btn-outline">Learn About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section section-video-full">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>Conference <span class="text-gold">Overview</span></h2>
-                    <p>The Second Annual Conference 2026 is the official international flagship event
-                        of IJBTCS,
-                        bringing
-                        together researchers, developers, and industry leaders.</p>
-                    <p class="mt-2 text-muted">Hosted in Egypt by Bioinformatics Gate, this edition emphasizes the
-                        integration
-                        of Biotechnology with Computational Science, promoting interdisciplinary research that bridges
-                        experimental lab innovation with AI.</p>
-                    <div class="mt-3">
-                        <a href="about.html" class="btn btn-outline">Learn About Us</a>
-                    </div>
-                </div>
-                <div class="video-box" id="open-video">
-                    <div class="play-btn"><i class="fa-solid fa-play"></i></div>
-                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800"
-                        class="video-placeholder-img" alt="Lab Concept">
-                </div>
+            <div class="video-box-full" id="open-video">
+                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1600"
+                    class="video-placeholder-img-full" alt="Lab Concept">
             </div>
         </div>
     </section>
@@ -408,7 +409,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo">IJBTCS <span>2026</span></a>
+                    <a href="index.html" class="logo"><span class="logo-badge">IG</span>IJBTCS <span>2026</span></a>
                     <p class="text-muted footer-desc">The official international flagship event bridging
                         Biotechnology and Computational Science. A unique synergy of academia and industry in the heart
                         of Egypt.</p>
@@ -451,7 +452,7 @@
             if (videoBox && videoModal) {
                 videoBox.addEventListener('click', () => {
                     videoModal.classList.add('active');
-                    videoIframe.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"; // Example video
+                    videoIframe.src = "https://www.youtube.com/embed/L7S40F4aSEk?autoplay=1"; // Example video
                 });
 
                 closeModal.addEventListener('click', () => {
