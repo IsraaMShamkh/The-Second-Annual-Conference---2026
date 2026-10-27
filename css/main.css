@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
 
 /* 
-IJBTCS 2026 - Main Stylesheet
+IJBTCS 2027 - Main Stylesheet
 Theme: Academic Pharaonic (Premium)
 */
 
@@ -834,7 +834,7 @@ h3 {
     padding: 10rem 0 6rem;
     text-align: center;
     background: linear-gradient(to bottom, rgba(15, 21, 37, 0.8), var(--dark-bg)),
-        url('../img/hero-heritage.png');
+        url('../img/travel/pyramids.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -858,50 +858,71 @@ h3 {
     z-index: 2;
 }
 
-/* Video Modal Styles */
-.video-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 2000;
-    justify-content: center;
-    align-items: center;
-}
-
-.video-modal.active {
-    display: flex;
-}
-
-.video-container {
+/* Inline Video Styles */
+.video-wrapper-inline {
     position: relative;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
     aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--accent-gold);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
     background: #000;
 }
-
-.video-container iframe {
+.video-wrapper-inline iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border: none;
 }
 
-.close-modal {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
+/* Centered Contact Section */
+.contact-section-centered {
+    background: var(--dark-card);
+    padding: 3.5rem;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    max-width: 1000px;
+    margin: 0 auto 5rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin: 3rem 0;
+}
+.contact-detail-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
     transition: var(--transition);
 }
-
-.close-modal:hover {
+.contact-detail-item:hover {
+    border-color: var(--accent-gold);
+    background: rgba(212, 175, 55, 0.03);
+    transform: translateY(-5px);
+}
+.detail-icon {
+    font-size: 2rem;
     color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+.contact-detail-item h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+.contact-detail-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Responsive */
@@ -1098,7 +1119,7 @@ h3 {
 .page-header {
     padding: 160px 0 80px;
     background: linear-gradient(rgba(10, 14, 23, 0.8), rgba(10, 14, 23, 0.95)),
-        url('../img/hero-heritage.png');
+        url('../img/travel/pyramids.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -2327,6 +2348,14 @@ h3 {
     background: rgba(212, 175, 55, 0.05);
 }
 
+.partner-wordmark {
+    color: var(--accent-gold);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
 .status-tag {
     padding: 2px 8px;
     border-radius: 4px;
@@ -2531,7 +2560,7 @@ h3 {
     align-items: center;
     justify-content: flex-start;
     background: linear-gradient(rgba(10, 14, 23, 0.4), rgba(10, 14, 23, 0.8)),
-        url('../img/hero-heritage.png');
+        url('../img/travel/pyramids.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
