@@ -825,6 +825,29 @@ h3 {
     border-top: 1px solid rgba(212, 175, 55, 0.1);
 }
 
+/* Conference footer: use the same clean white surface requested for the site shell. */
+.footer {
+    background: #fff;
+    color: #1d2939;
+    border-top-color: #e4e7ec;
+}
+
+.footer .logo,
+.footer h4,
+.footer a,
+.footer .text-muted {
+    color: #344054;
+}
+
+.footer h4,
+.footer .logo span {
+    color: var(--accent-gold);
+}
+
+.footer-bottom {
+    border-top-color: #eaecf0;
+}
+
 .hover-gold:hover {
     color: var(--accent-gold) !important;
 }
@@ -2354,6 +2377,78 @@ h3 {
     font-weight: 800;
     letter-spacing: 0.06em;
     text-align: center;
+}
+
+/* Logo-led partnership page: retain each supplied partner mark without an icon/filter substitute. */
+.org-logo-frame {
+    width: 104px;
+    height: 78px;
+    padding: 0.45rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.org-logo-frame img,
+.partner-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: none;
+    opacity: 1;
+    padding: 0;
+}
+
+.partner-logo-container {
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Equal online registration cards, with the two primary actions aligned in one row. */
+.online-fee-grid .pricing-card {
+    min-height: 430px;
+}
+
+.online-fee-grid .card-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 0.65rem;
+    width: 100%;
+}
+
+.online-fee-grid .card-actions .btn {
+    width: 100% !important;
+    min-width: 0;
+    margin: 0;
+}
+
+/* Sponsorship benefits live in their own long cards; there is no secondary benefits panel. */
+.sponsor-package {
+    min-height: 610px;
+    max-width: none;
+}
+
+.sponsor-package .card-actions .btn {
+    width: 100% !important;
+}
+
+.custom-tag {
+    min-height: 27px;
+    margin: -0.35rem 0 0.6rem;
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width: 640px) {
+    .online-fee-grid .card-actions {
+        grid-template-columns: 1fr;
+    }
 }
 
 .status-tag {
