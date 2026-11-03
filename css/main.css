@@ -3278,3 +3278,21 @@ h3 {
     background-color: var(--accent-gold-hover);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
 }
+
+/* Footer spans the same width and side margins as the header */
+.footer > .container {
+    max-width: 100%;
+    padding: 0 4rem;
+}
+
+@media (max-width: 992px) {
+    .footer > .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer > .container {
+        padding: 0 1.5rem;
+    }
+}
